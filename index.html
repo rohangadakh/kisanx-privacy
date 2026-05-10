@@ -84,11 +84,18 @@
             margin-bottom: 6px;
         }
 
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 16px 0;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 16px 0;
             font-size: 0.92em;
+            min-width: 500px;
         }
 
         th {
@@ -124,10 +131,10 @@
 
         .deletion-box .step {
             background: white;
-            border-left: 4px solid #e53935;
-            padding: 12px 16px;
-            margin: 10px 0;
-            border-radius: 0 6px 6px 0;
+            border: 1px solid #ffcdd2;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border-radius: 8px;
         }
 
         .deletion-box .step strong {
@@ -139,11 +146,11 @@
         }
 
         .warning-note {
-            background: #fff3e0;
-            border-left: 4px solid #f57c00;
-            padding: 12px 16px;
-            border-radius: 0 6px 6px 0;
-            margin: 10px 0;
+            background: #fff8f0;
+            border: 1px solid #ffe0b2;
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 12px 0;
             font-size: 0.93em;
             color: #555;
             display: flex;
@@ -336,110 +343,116 @@
         KisanX uses the following trusted third-party services. Each service 
         operates under its own Privacy Policy, linked below.
     </p>
-    <table>
-        <tr>
-            <th>Service</th>
-            <th>Purpose</th>
-            <th>Data They May Collect</th>
-            <th>Their Privacy Policy</th>
-        </tr>
-        <tr>
-            <td>Google Play Services</td>
-            <td>Core Android functionality</td>
-            <td>Device identifiers</td>
-            <td>
-                <a href="https://policies.google.com/privacy" 
-                   target="_blank">Google Privacy Policy</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Firebase Authentication</td>
-            <td>Phone OTP & Google Sign-In</td>
-            <td>Phone number, email, Google ID</td>
-            <td>
-                <a href="https://firebase.google.com/support/privacy" 
-                   target="_blank">Firebase Privacy</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Firebase Firestore</td>
-            <td>Cloud data storage</td>
-            <td>User content, profile data</td>
-            <td>
-                <a href="https://firebase.google.com/support/privacy" 
-                   target="_blank">Firebase Privacy</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Firebase Cloud Storage</td>
-            <td>Photo and file storage</td>
-            <td>Uploaded images and files</td>
-            <td>
-                <a href="https://firebase.google.com/support/privacy" 
-                   target="_blank">Firebase Privacy</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Firebase Analytics</td>
-            <td>App usage analytics</td>
-            <td>Usage patterns, device info</td>
-            <td>
-                <a href="https://policies.google.com/privacy" 
-                   target="_blank">Google Privacy Policy</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Google Gemini AI</td>
-            <td>AI farming assistant</td>
-            <td>Text queries you send to AI</td>
-            <td>
-                <a href="https://policies.google.com/privacy" 
-                   target="_blank">Google Privacy Policy</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Google Play Billing</td>
-            <td>Subscription payment processing</td>
-            <td>Purchase tokens only</td>
-            <td>
-                <a href="https://policies.google.com/privacy" 
-                   target="_blank">Google Privacy Policy</a>
-            </td>
-        </tr>
-    </table>
+    
+    <div class="table-responsive">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Data They May Collect</th>
+                <th>Their Privacy Policy</th>
+            </tr>
+            <tr>
+                <td>Google Play Services</td>
+                <td>Core Android functionality</td>
+                <td>Device identifiers</td>
+                <td>
+                    <a href="https://policies.google.com/privacy" 
+                       target="_blank">Google Privacy Policy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Firebase Authentication</td>
+                <td>Phone OTP & Google Sign-In</td>
+                <td>Phone number, email, Google ID</td>
+                <td>
+                    <a href="https://firebase.google.com/support/privacy" 
+                       target="_blank">Firebase Privacy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Firebase Firestore</td>
+                <td>Cloud data storage</td>
+                <td>User content, profile data</td>
+                <td>
+                    <a href="https://firebase.google.com/support/privacy" 
+                       target="_blank">Firebase Privacy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Firebase Cloud Storage</td>
+                <td>Photo and file storage</td>
+                <td>Uploaded images and files</td>
+                <td>
+                    <a href="https://firebase.google.com/support/privacy" 
+                       target="_blank">Firebase Privacy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Firebase Analytics</td>
+                <td>App usage analytics</td>
+                <td>Usage patterns, device info</td>
+                <td>
+                    <a href="https://policies.google.com/privacy" 
+                       target="_blank">Google Privacy Policy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Google Gemini AI</td>
+                <td>AI farming assistant</td>
+                <td>Text queries you send to AI</td>
+                <td>
+                    <a href="https://policies.google.com/privacy" 
+                       target="_blank">Google Privacy Policy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Google Play Billing</td>
+                <td>Subscription payment processing</td>
+                <td>Purchase tokens only</td>
+                <td>
+                    <a href="https://policies.google.com/privacy" 
+                       target="_blank">Google Privacy Policy</a>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <h2>5. Permissions We Request</h2>
-    <table>
-        <tr>
-            <th>Permission</th>
-            <th>Why We Need It</th>
-            <th>Required / Optional</th>
-        </tr>
-        <tr>
-            <td>INTERNET</td>
-            <td>Syncing your farming data to Firebase cloud and 
-                connecting to AI services</td>
-            <td>Required</td>
-        </tr>
-        <tr>
-            <td>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</td>
-            <td>Providing local weather updates, nearby market prices, 
-                and location-based crop recommendations</td>
-            <td>Optional</td>
-        </tr>
-        <tr>
-            <td>READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td>
-            <td>Allowing you to select farm and crop photos from your 
-                gallery to attach to your records</td>
-            <td>Optional</td>
-        </tr>
-        <tr>
-            <td>WRITE_EXTERNAL_STORAGE</td>
-            <td>Saving generated expense PDF reports to your device 
-                (Android 9 and below only)</td>
-            <td>Optional</td>
-        </tr>
-    </table>
+    
+    <div class="table-responsive">
+        <table>
+            <tr>
+                <th>Permission</th>
+                <th>Why We Need It</th>
+                <th>Required / Optional</th>
+            </tr>
+            <tr>
+                <td>INTERNET</td>
+                <td>Syncing your farming data to Firebase cloud and 
+                    connecting to AI services</td>
+                <td>Required</td>
+            </tr>
+            <tr>
+                <td>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</td>
+                <td>Providing local weather updates, nearby market prices, 
+                    and location-based crop recommendations</td>
+                <td>Optional</td>
+            </tr>
+            <tr>
+                <td>READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td>
+                <td>Allowing you to select farm and crop photos from your 
+                    gallery to attach to your records</td>
+                <td>Optional</td>
+            </tr>
+            <tr>
+                <td>WRITE_EXTERNAL_STORAGE</td>
+                <td>Saving generated expense PDF reports to your device 
+                    (Android 9 and below only)</td>
+                <td>Optional</td>
+            </tr>
+        </table>
+    </div>
 
     <h2>6. KisanX Premium Subscription and Billing</h2>
     <ul>
